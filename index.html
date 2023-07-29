@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Scatterplot</title>
+    <!-- Add the D3 library -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/d3-annotation@3.0.0-beta.3/build/d3-annotation.min.js"></script>
+</head>
+<body>
+    <div class="chart-title-container">
+        <h1 class="chart-title">US Natural Gas Price Trends Over Time</h1> <!-- Add the title here -->
+    </div>
+    <div class="selection-bar">
+        <button class="data-btn" data-range="1997-2006">1997-2007</button>
+        <button class="data-btn" data-range="2007-2015">2007-2016</button>
+        <button class="data-btn" data-range="2016-2022">2016-2022</button>
+        <button class="data-btn" data-range="full-data">Full Data</button>
+    </div>
+    <div class="lineplot-container">
+        <svg class="lineplot"></svg>
+    </div>
+    <script src="script.js"></script>
+    <svg width="0" height="0" style="position: absolute; visibility: hidden;">
+        <defs>
+            <marker
+                id="arrowhead"
+                markerWidth="10"
+                markerHeight="7"
+                refX="10"
+                refY="3.5"
+                orient="auto"
+                markerUnits="strokeWidth"
+            >
+                <polygon points="0 0, 10 3.5, 0 7" fill="steelblue"></polygon>
+            </marker>
+        </defs>
+    </svg>
+    
+</body>
+</html>

@@ -1,0 +1,61 @@
+.selection-bar {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.data-btn {
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+.data-btn:hover {
+    background-color: #ddd;
+}
+
+.lineplot-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.lineplot {
+    /* Add any additional styles for the line plot container here */
+    /* For example, you can set a max-width to limit the width of the plot */
+    max-width: 800px;
+}
+
+.chart-title-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .chart-title {
+    font-size: 30px;
+  }
+
+  .annotation {
+    font-size: 12px;
+    fill: steelblue;
+}
+.annotation-line {
+    stroke: rgb(2, 16, 27);
+    stroke-width: 1.5;
+}
+
+.annotation-text {
+    font-size: 14px;
+    fill: rgb(3, 14, 24);
+}
+
+.footnote {
+    font-size: 28px;
+    fill: #333;
+  }
